@@ -32,3 +32,21 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+let about = document.querySelector('#about');
+console.log(about.offsetHeight)
+let nav = document.querySelector('#sideNav');
+let content = document.querySelector('body');
+let profile = document.querySelector('#profile-img');
+window.onscroll = function(){
+    if(window.scrollY>about.offsetHeight-about.offsetHeight*0.3){
+        nav.classList.add('extend')
+        content.classList.add('extend')
+        profile.classList.add('extend')
+    }
+    else{
+        nav.classList.remove('extend')
+        content.classList.remove('extend')
+        profile.classList.remove('extend')
+    }
+}

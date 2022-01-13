@@ -1,0 +1,33 @@
+.pop-text{
+    font-family: 'Rampart One', cursive;
+}
+#profile-img{
+    opacity: 0;
+    transition: .3s;
+    width: 5rem;
+
+}
+#profile-img.extend{
+    opacity: 1;
+    animation: show .5s;
+    width: 17rem;
+
+}
+
+@keyframes show {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    75% {
+        transform: scale(1.06);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
