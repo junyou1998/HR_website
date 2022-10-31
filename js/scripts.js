@@ -54,6 +54,17 @@ window.onscroll = function(){
 let data = {
     plan_show: false,
     plan_idx: 0,
+    projects:[
+        {
+            title: 'DEVIL DEFENCE',
+            students: ['李映璇','林楷倫','王齡移','黃彥彰'],
+            year: 111
+        },{
+            title: '嗑藥山人一尋草求序',
+            students: ['吳炫宗','陳婉瑜','梁瑜容'],
+            year: 111
+        }
+    ],
     plans: [
         {
             title: '應用穿戴式科技開發情境感知與即時適性之EFL學習環境-子計畫四:在博物館環境應用穿戴科技開發情境感知即時適性EFL學習系統',
