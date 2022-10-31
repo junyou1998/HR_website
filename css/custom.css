@@ -1,33 +1,101 @@
-.pop-text{
-    font-family: 'Rampart One', cursive;
+.pop-text {
+  font-family: "Rampart One", cursive;
 }
-#profile-img{
-    opacity: 0;
-    transition: .3s;
-    width: 5rem;
 
+#profile-img {
+  opacity: 0;
+  transition: 0.3s;
+  width: 5rem;
 }
-#profile-img.extend{
-    opacity: 1;
-    animation: show .5s;
-    width: 17rem;
 
+#profile-img.extend {
+  opacity: 1;
+  -webkit-animation: show 0.5s;
+          animation: show 0.5s;
+  width: 17rem;
+}
+
+@-webkit-keyframes show {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes show {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(0.95);
-    }
-
-    75% {
-        transform: scale(1.06);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
+#app {
+  position: relative;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  padding: 100px 200px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.popup .window {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px 50px;
+  overflow: scroll;
+}
+.popup.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.popup .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(75, 4, 42, 0.8);
+  z-index: -1;
+}
+
+.navbar {
+  z-index: 0;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+#about {
+  display: flex;
+}
+#about .photo {
+  flex: 1;
+}
+#about .photo img {
+  width: 700px;
+}/*# sourceMappingURL=custom.css.map */

@@ -3032,7 +3032,7 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
-.btn-primary {
+/* .btn-primary {
   color: #000;
   background-color: #bd5d38;
   border-color: #bd5d38;
@@ -3041,7 +3041,18 @@ textarea.form-control-lg {
   color: #000;
   background-color: #c77556;
   border-color: #c46d4c;
+} */
+.btn-primary {
+  color: #fff;
+  background-color: #ce2b6f;
+  border-color: #ce2b6f;
 }
+.btn-primary:hover {
+  color: #fff;
+  background-color: #ce2b6f;
+  border-color: #ce2b6f;
+}
+
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #000;
   background-color: #c77556;
@@ -11425,7 +11436,8 @@ section.resume-section {
   padding-right: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  max-width: 75rem;
+  /* max-width: 75rem; */
+  max-width: 100%;
 }
 section.resume-section .resume-section-content {
   width: 100%;
