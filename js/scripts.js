@@ -63,6 +63,22 @@ let data = {
             title: '嗑藥山人一尋草求序',
             students: ['吳炫宗','陳婉瑜','梁瑜容'],
             year: 111
+        },{
+            title: '<越來越不南> RPG學習型App',
+            students: ['林旻沛','黃育昕'],
+            year: 111
+        },{
+            title: '珍實力',
+            students: ['彭如霈','黃麟貴','陳子涵'],
+            year: 110
+        },{
+            title: '關於__的自白',
+            students: ['張巧琳','林意帆'],
+            year: 109
+        },{
+            title: 'ReExam , Therefore We Are.我試故我在',
+            students: ['陳文楷','李德恩'],
+            year: 109
         }
     ],
     plans: [

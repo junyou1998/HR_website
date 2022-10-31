@@ -129,13 +129,12 @@
                         <h2 class="mb-5">專題指導</h2>
 
                         <div class="projects" v-for="(project,index) in projects">
-                            <div class="subheading mb-3">專題名稱 >> {{project.title}}</div>
+                            <h3 class="mb-0">{{project.title}}</h3>
                             
                             <div class="subheading mb-3">學生</div>
-                            <ul class="fa-ul mb-0">
+                            <ul class="mb-0 d-flex" >
                                 <li v-for="student in project.students">
-                                    <span class="fa-li"><i class="fas fa-user"></i></span>
-                                    {{student}}
+                                    {{student}} / 
                                 </li>
                             </ul>
                             <hr>
@@ -178,6 +177,18 @@
                             <li>
                                 <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                                 2021優良教師
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- 專業服務-->
+                <section class="resume-section" id="service">
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">專業服務</h2>
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                                專業服務....
                             </li>
                         </ul>
                     </div>
