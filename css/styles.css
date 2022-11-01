@@ -11440,7 +11440,7 @@ section.resume-section {
   max-width: 100%;
 }
 section.resume-section .resume-section-content {
-  width: 100%;
+  flex: 1;
 }
 
 @media (min-width: 768px) {

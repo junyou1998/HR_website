@@ -97,5 +97,36 @@ p {
   flex: 1;
 }
 #about .photo img {
-  width: 700px;
+  width: 100%;
+}
+
+.projects {
+  display: flex;
+  margin-bottom: 40px;
+}
+.projects .left {
+  flex: 1;
+}
+.projects .right {
+  flex: 1;
+}
+.projects img {
+  width: 250px;
+}
+
+.swiper {
+  max-width: 900px;
+  height: 700px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #fff;
+  border: solid 5px #ce2b6f;
+  padding: 50px;
 }/*# sourceMappingURL=custom.css.map */
