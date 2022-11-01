@@ -115,3 +115,20 @@ p {
 }
 
 
+#students{
+    li{
+        margin: 10px 0;
+        span{
+            margin-right: 15px;
+        }
+    }
+    .year{
+        background-color: #ffedf4;
+        padding: 2px 8px;
+        border-radius: 3px;
+    }
+    .name{
+        color: #000;
+        font-weight: bold;
+    }
+}

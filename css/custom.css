@@ -129,4 +129,20 @@ p {
   background-color: #fff;
   border: solid 5px #ce2b6f;
   padding: 50px;
+}
+
+#students li {
+  margin: 10px 0;
+}
+#students li span {
+  margin-right: 15px;
+}
+#students .year {
+  background-color: #ffedf4;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+#students .name {
+  color: #000;
+  font-weight: bold;
 }/*# sourceMappingURL=custom.css.map */

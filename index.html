@@ -125,20 +125,6 @@
             <section class="resume-section" id="project">
                 <div class="resume-section-content">
                     <h2 class="mb-5">專題指導</h2>
-
-                    <!-- <div class="projects" v-for="(project,index) in projects">
-                        <div class="left">
-                            <h3 class="mb-0">{{project.title}}</h3>
-                            <img :src="project.img" alt="" />
-                        </div>
-                        <div class="right">
-                            <h3 class="mb-0">學生</h3>
-                            <ul class="mb-0">
-                                <li v-for="student in project.students">{{student}}</li>
-                            </ul>
-                        </div>
-                    </div> -->
-
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide projects" v-for="(project,index) in projects">
@@ -147,6 +133,7 @@
                                     <img :src="project.img" alt="" />
                                 </div>
                                 <div class="right">
+                                    <p>{{ project.description.substring(0,150) + '...'}}</p>
                                     <h3 class="mb-0">學生</h3>
                                     <ul class="mb-0">
                                         <li v-for="student in project.students">{{student}}</li>
@@ -165,14 +152,9 @@
             <section class="resume-section" id="students">
                 <div class="resume-section-content">
                     <h2 class="mb-5">畢業學生</h2>
-                    <p>
-                        Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice
-                        climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.
-                    </p>
-                    <p class="mb-0">
-                        When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I
-                        spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.
-                    </p>
+                    <ul>
+                        <li v-for="student in students"><span class="year">{{student.year}}</span><span class="name">{{student.name}}</span><span>{{student.topic}}</span></li>
+                    </ul>
                 </div>
             </section>
             <hr class="m-0" />
@@ -181,14 +163,6 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">獲獎紀錄</h2>
                     <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2021優良教師
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2021優良教師
-                        </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                             2021優良教師
