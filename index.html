@@ -47,7 +47,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">教師介紹</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#writting">學術著作</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#writting">學術著作</a></li> -->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#plan">研究計畫</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project">專題指導</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#students">畢業學生</a></li>
@@ -81,12 +81,12 @@
                     </div>
                 </div>
                 <div class="photo">
-                    <img src="./assets/img/hr.webp" alt="" />
+                    <img id="hr" src="./assets/img/hr.webp" alt="" />
                 </div>
             </section>
             <hr class="m-0" />
             <!-- 學術著作-->
-            <section class="resume-section" id="writting">
+            <!-- <section class="resume-section" id="writting">
                 <div class="resume-section-content">
                     <h2 class="mb-5">學術著作</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -98,7 +98,7 @@
                         <div class="flex-shrink-0"><span class="text-primary">數位學習科技期刊</span></div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <hr class="m-0" />
             <!-- 研究計畫-->
             <section class="resume-section" id="plan">
@@ -157,9 +157,79 @@
             <section class="resume-section" id="students">
                 <div class="resume-section-content">
                     <h2 class="mb-5">畢業學生</h2>
-                    <ul>
-                        <li v-for="student in students"><span class="year">{{student.year}}</span><span class="name">{{student.name}}</span><span>{{student.topic}}</span></li>
-                    </ul>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2020" aria-expanded="true" aria-controls="collapseOne">
+                              2020~今
+                            </button>
+                          </h2>
+                          <div id="collapse2020" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li v-for="student in students[0]"><span class="year">{{student.year}}</span><span class="name">{{student.name}}</span><span>{{student.topic}}</span></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2015" aria-expanded="false" aria-controls="collapseTwo">
+                              2015~2019
+                            </button>
+                          </h2>
+                          <div id="collapse2015" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li v-for="student in students[1]"><span class="year">{{student.year}}</span><span class="name">{{student.name}}</span><span>{{student.topic}}</span></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2010" aria-expanded="false" aria-controls="collapseThree">
+                              2010~2014
+                            </button>
+                          </h2>
+                          <div id="collapse2010" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li v-for="student in students[2]"><span class="year">{{student.year}}</span><span class="name">{{student.name}}</span><span>{{student.topic}}</span></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2005" aria-expanded="false" aria-controls="collapseThree">
+                                2005~2009
+                              </button>
+                            </h2>
+                            <div id="collapse2005" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <ul>
+                                    <li v-for="student in students[3]"><span class="year">{{student.year}}</span><span class="name">{{student.name}}</span><span>{{student.topic}}</span></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- 蓋世英雄 -->
+            <section class="resume-section" id="hero">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">蓋世英雄</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">傑出校友</h3>
+                            <!-- <div class="subheading mb-3">The Investigations of Adopting Problem-based Learning Model in Micro-Blog</div> -->
+                            <p>一些介紹.........</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">數位學習科技期刊</span></div>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
